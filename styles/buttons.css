@@ -1,0 +1,75 @@
+#cubic {
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  padding: 0 20px;
+  -webkit-perspective: 300px;
+  -moz-perspective: 300px;
+  -ms-perspective: 300px;
+  -o-perspective: 300px;
+  perspective: 580px;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+#cubic span {
+  display: block;
+  background: #188a80;
+  padding: 20px 20px;
+  top: 0;
+  width: 260px;
+  transition: .4s all ease;
+  -webkit-transform-origin:50% 0;
+  -moz-transform-origin:50% 0;
+  -ms-transform-origin:50% 0;
+  -o-transform-origin:50% 0;
+  transform-origin:50% 0;
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-style:preserve-3d;
+  -moz-transform-style:preserve-3d;
+  -ms-transform-style:preserve-3d;
+  -o-transform-style:preserve-3d;
+  transform-style:preserve-3d;
+}
+
+#cubic:hover span {
+  background: rgb(74, 88, 82);
+  -webkit-transform: translate3d(0px,0px,-60px) rotateX(90deg);
+  -moz-transform: translate3d(0px,0px,-60px) rotateX(90deg);
+  -ms-transform: translate3d(0px,0px,-60px) rotateX(90deg);
+  -o-transform: translate3d(0px,0px,-60px) rotateX(90deg);
+  transform: translate3d(0px,0px,-60px) rotateX(90deg);
+}
+
+#cubic span:after {
+  content: attr(title);
+  display: block;
+  width: 220px;
+  padding: 20px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #188a80;
+  background: rgb(202, 119, 10);
+  transition: .8s all ease;
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform: translate3d(0px, 100%,0) rotateX(-90deg);
+  -moz-transform: translate3d(0px, 100%,0) rotateX(-90deg);
+  -ms-transform: translate3d(0px, 100%,0) rotateX(-90deg);
+  -o-transform: translate3d(0px, 100%,0) rotateX(-90deg);
+  transform: translate3d(0px, 100%,0) rotateX(-90deg);
+}
+
+#cubic:hover span:after {
+  background: #FFFF99;
+}
